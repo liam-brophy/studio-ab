@@ -11,8 +11,8 @@ function Project({ title, description, images }) {
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to={`/work/${slug}`} style={{ textDecoration: 'none', color: 'black' }}>
-          <h3 style={{ margin: 0, cursor: 'pointer' }}>{title}</h3>
+        <Link to={`/work/${slug}`} style={{ textDecoration: 'none', color: '#CC5500' }}>
+          <h3 style={{ margin: 0, cursor: 'pointer', fontWeight: 100 }}>{title}</h3>
         </Link>
         {expanded ? (
           <FiMinus onClick={() => setExpanded(false)} style={{ cursor: 'pointer' }} />
@@ -20,11 +20,11 @@ function Project({ title, description, images }) {
           <FiPlus onClick={() => setExpanded(true)} style={{ cursor: 'pointer' }} />
         )}
       </div>
-      <hr style={{ border: 'none', borderTop: '1px solid black', margin: '5px 0' }} />
+      <hr style={{ border: 'none', borderTop: '1px solid #CC5500', margin: '5px 0' }} />
       {expanded && (
-        <div style={{ padding: '10px' }}>
-          <p>{description}</p>
-          {previewImage && <img src={previewImage} alt={title} />}
+        <div style={{ padding: '10px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          {previewImage && <img src={previewImage} alt={title} style={{ width: '150px', height: 'auto' }} />}
+          <p style={{ textTransform: 'none', flex: 1 }}>{description}</p>
         </div>
       )}
     </div>

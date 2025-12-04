@@ -4,7 +4,7 @@ function DropDown() {
   const projects = [
     { 
       title: '2 BRANDYWINE COURT', 
-      description: 'A residential project at 2 Brandywine Court.', 
+      description: 'A residential project at 2 Brandywine Court. Completed in 2022.', 
       images: [
         '/2 Brandywine Court/01_Photos/00827_medium.jpg',
         '/2 Brandywine Court/01_Photos/00827_N2_medium.jpg',
@@ -47,7 +47,7 @@ function DropDown() {
     },
     { 
       title: '14 SOUTH LAKE TRAIL', 
-      description: 'A residential project at 14 South Lake Trail.', 
+      description: 'A residential project at 14 South Lake Trail. Completed in 2021.', 
       images: [
         '/14 South Lake Trail/01_Photos/00705_N100_medium.jpg',
         '/14 South Lake Trail/01_Photos/00705_N107_medium.jpg',
@@ -99,7 +99,7 @@ function DropDown() {
     },
     { 
       title: '180 MIDOCEAN DRIVE', 
-      description: 'A residential project at 180 Midocean Drive.', 
+      description: 'A residential project at 180 Midocean Drive. Completed in 2020.', 
       images: [
         '/180 Midocean Drive/01_Photos/00754_N169_medium.jpg',
         '/180 Midocean Drive/01_Photos/00754_N170_medium.jpg',
@@ -133,7 +133,7 @@ function DropDown() {
     },
     { 
       title: '301 E 81ST STREET', 
-      description: 'A residential project at 301 E 81st Street.', 
+      description: 'A residential project at 301 E 81st Street. Completed in 2019.', 
       images: [
         '/301 East 81st Street/01_Photos/00708_medium.jpg',
         '/301 East 81st Street/01_Photos/00708_N2_medium.jpg',
@@ -159,7 +159,7 @@ function DropDown() {
     },
     { 
       title: '4582 NOYAC RD', 
-      description: 'A residential project at 4582 Noyac Rd.', 
+      description: 'A residential project at 4582 Noyac Rd. Completed in 2018.', 
       images: [
         '/4582 Noyac Road/01_Photos/IMG_4279.jpg',
         '/4582 Noyac Road/01_Photos/IMG_4280.jpg',
@@ -191,14 +191,14 @@ function DropDown() {
         '/4582 Noyac Road/01_Photos/IMG_4306.jpg'
       ]
     },
-    { title: '6666 PINE TREE LANE', description: 'A residential project at 6666 Pine Tree Lane.', images: [] },
-    { title: '9001 COLLINS AVENUE', description: 'A residential project at 9001 Collins Avenue.', images: [] },
-    { title: 'FRESH MEADOW COUNTRY CLUB', description: 'A project at Fresh Meadow Country Club.', images: [] },
-    { title: 'METROPOLIS COUNTRY CLUB', description: 'A project at Metropolis Country Club.', images: [] },
+    { title: '6666 PINE TREE LANE', description: 'A residential project at 6666 Pine Tree Lane. Completed in 2017.', images: [] },
+    { title: '9001 COLLINS AVENUE', description: 'A residential project at 9001 Collins Avenue. Completed in 2016.', images: [] },
+    { title: 'FRESH MEADOW COUNTRY CLUB', description: 'A project at Fresh Meadow Country Club. Completed in 2015.', images: [] },
+    { title: 'METROPOLIS COUNTRY CLUB', description: 'A project at Metropolis Country Club. Completed in 2014.', images: [] },
   ];
 
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', padding: '20px' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px', padding: '20px' }}>
       {projects.map((proj, i) => <Project key={i} {...proj} />)}
     </div>
   );

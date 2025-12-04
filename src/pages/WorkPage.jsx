@@ -2,7 +2,7 @@ import DropDown from '../components/DropDown';
 
 function WorkPage() {
   return (
-    <div>
+    <div style={{ marginTop: '40px' }}>
       <DropDown />
     </div>
   );
