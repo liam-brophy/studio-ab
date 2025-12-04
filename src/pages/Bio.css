@@ -1,0 +1,65 @@
+.bio {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bio h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.bio-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.bio-content p {
+  margin-bottom: 1.5rem;
+}
+
+.bio-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bio-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #646cff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.bio-link:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .bio {
+    padding: 2rem 1.5rem;
+  }
+
+  .bio h1 {
+    font-size: 2rem;
+  }
+
+  .bio-content {
+    font-size: 1rem;
+  }
+
+  .bio-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
